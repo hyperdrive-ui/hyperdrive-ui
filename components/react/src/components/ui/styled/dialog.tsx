@@ -8,6 +8,7 @@ import { createStyleContext } from './utils/create-style-context'
 const { withRootProvider, withContext } = createStyleContext(dialog)
 
 export type RootProviderProps = ComponentProps<typeof RootProvider>
+
 export const RootProvider = withRootProvider<Assign<Dialog.RootProviderProps, DialogVariantProps>>(
   Dialog.RootProvider,
 )

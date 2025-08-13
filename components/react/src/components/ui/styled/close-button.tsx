@@ -1,5 +1,5 @@
 import { ark } from '@ark-ui/react/factory'
-import { MdClose } from 'react-icons/md'
+// import { MdClose } from 'react-icons/md'
 import { styled } from 'styled-system/jsx'
 import { type ButtonVariantProps, button } from 'styled-system/recipes'
 import type { ComponentProps } from 'styled-system/types'

@@ -6,8 +6,8 @@
     "prepare": "panda codegen --clean"
   },
   "dependencies": {
-    "@pandacss/dev": "0.54.0",
-    "@hyperdrive-ui/panda-preset": "workspace:*"
+    "@hyperdrive-ui/panda-preset": "workspace:*",
+    "@pandacss/dev": "1.0.1"
   },
   "exports": {
     "./css": {
