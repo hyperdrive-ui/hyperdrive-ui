@@ -1,0 +1,23 @@
+{
+  "name": "hyperdrive-ui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "turbo run dev --filter=@hyperdrive-ui/website",
+    "build": "turbo run build --filter=@hyperdrive-ui/website"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.14.0",
+  "dependencies": {
+    "typescript": "5.8.3"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.41",
+    "turbo": "^2.5.5"
+  }
+}
