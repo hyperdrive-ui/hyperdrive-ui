@@ -3,13 +3,19 @@
   "tasks": {
     "build": {
       "dependsOn": ["^build"],
-      "outputs": [".next/**", "dist/**",  ".velite/**", "!.next/cache/**", "styled-system/**"],
+      "outputs": [".next/**", "dist/**",  ".velite/**", "!.next/cache/**", "styled-system/**"]
     },
     "check-types": {
       "dependsOn": ["^check-types"]
     },
     "dev": {
       "persistent": true,
+      "cache": false
+    },
+    "lint": {
+      "dependsOn": ["^build"]
+    },
+    "clean": {
       "cache": false
     }
   }
