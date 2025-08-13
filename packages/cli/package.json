@@ -1,7 +1,6 @@
 {
   "name": "@hyperdrive-ui/cli",
   "version": "0.1.0",
-  "private": true,
   "type": "module",
   "bin": {
     "parkui": "dist/index.js"

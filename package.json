@@ -1,12 +1,15 @@
 {
   "name": "hyperdrive-ui",
   "version": "1.0.0",
-  "description": "",
+  "private": true,
+  "description": "Monorepo for Hyperdrive UI.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "turbo run dev --filter=@hyperdrive-ui/website",
-    "build": "turbo run build --filter=@hyperdrive-ui/website",
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "lint": "turbo lint",
+    "type-check": "turbo type-check",
+    "clean": "turbo clean",
     "sync:components": "rsync -av ./components/react/src/components/ui ./apps/website/src/components"
   },
   "keywords": [],
