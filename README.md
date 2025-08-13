@@ -74,3 +74,7 @@ pnpm --filter @hyperdrive-ui/website exec velite
 2. Initialize Storybook (Vite builder) with pnpm
    From the components package:
    pnpm --filter @hyperdrive-ui/react dlx storybook@latest init --builder @storybook/react-vite
+
+pnpm --filter styled-system prepare && pnpm --filter @hyperdrive-ui/react dev
+
+pnpm --filter @hyperdrive-ui/website prepare && pnpm --filter @hyperdrive-ui/website dev
