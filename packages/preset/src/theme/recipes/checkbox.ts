@@ -1,15 +1,19 @@
-import { checkboxAnatomy } from '@ark-ui/react/checkbox'
+// import { checkboxAnatomy } from '@ark-ui/react/checkbox'
 import { defineSlotRecipe } from '@pandacss/dev'
-import { resolveAnatomyKeys } from '../../utils/resolve-anatomy-keys'
 
-const slots = resolveAnatomyKeys(checkboxAnatomy);
+// Option #1
+// import { resolveAnatomyKeys } from '../../utils/resolve-anatomy-keys'
+// const slots = resolveAnatomyKeys(checkboxAnatomy);
+
+// BACKUP: Hardcode array until that gets fixed
+
 
 export const checkbox = defineSlotRecipe({
   className: 'checkbox',
   // slots: [...checkboxAnatomy.keys()],
-  // slots: ["label", "root", "group", "control", "indicator"],
+  slots: ["label", "root", "group", "control", "indicator"],
   // slots: [...checkboxAnatomy.keys()],
-  slots: slots,
+  // slots: [...checkboxAnatomy.keys()],
   base: {
     root: {
       alignItems: 'center',

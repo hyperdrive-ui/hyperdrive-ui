@@ -285,3 +285,7 @@ Hyperdrive UI extends Park UI with:
 ## 🙏 Acknowledgments
 
 This project is inspired by and builds upon [Park UI](https://github.com/cschroeter/park-ui) by Christian Schröter. We're grateful for the solid foundation and architectural patterns it provides.
+
+## Known bug:
+
+Noticed that component anatomy imported from @ark-ui/react/checkbox for instance, will fail when passing keys checkboxAnatomy.keys() but if ark-ui export directly the anatomy from zag-js, then it works fine...

@@ -1,12 +1,13 @@
-import { fieldAnatomy } from '@ark-ui/react/field'
+// import { fieldAnatomy } from '@ark-ui/react/field'
 import { defineSlotRecipe } from '@pandacss/dev'
-import { resolveAnatomyKeys } from '../../utils/resolve-anatomy-keys';
+// import { resolveAnatomyKeys } from '../../utils/resolve-anatomy-keys';
 
-const slots = resolveAnatomyKeys(fieldAnatomy);
-
+// const slots = resolveAnatomyKeys(fieldAnatomy);
+const slots = ["input", "label", "select", "textarea", "root", "errorText", "helperText", "requiredIndicator"]
 
 export const field = defineSlotRecipe({
   className: 'field',
+  // slots: fieldAnatomy.keys(),
   slots: slots,
   base: {
     root: {

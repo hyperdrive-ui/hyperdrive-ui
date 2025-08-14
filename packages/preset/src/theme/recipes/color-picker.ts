@@ -1,14 +1,15 @@
-import { colorPickerAnatomy } from '@ark-ui/react/color-picker'
+// import { colorPickerAnatomy } from '@ark-ui/react/color-picker'
 import { defineSlotRecipe } from '@pandacss/dev'
-import { resolveAnatomyKeys } from '../../utils/resolve-anatomy-keys';
+// import { resolveAnatomyKeys } from '../../utils/resolve-anatomy-keys';
 
 
-const slots = resolveAnatomyKeys(colorPickerAnatomy);
-
+// const slots = resolveAnatomyKeys(colorPickerAnatomy);
+const parts = ["area", "label", "view", "content", "root", "trigger","control","valueText","positioner", "formatSelect" , "areaThumb" , "channelInput" , "channelSliderTrack" , "channelSliderThumb" , "areaBackground" , "channelSlider" , "channelSliderLabel" , "channelSliderValueText" , "transparencyGrid" , "swatchGroup" , "swatchTrigger" , "swatchIndicator" , "swatch" , "eyeDropperTrigger" , "formatTrigger" ]
 
 export const colorPicker = defineSlotRecipe({
   className: 'colorPicker',
-  slots: slots,
+  // slots: colorPickerAnatomy.keys(),
+  slots: parts,
   base: {
     root: {
       display: 'flex',

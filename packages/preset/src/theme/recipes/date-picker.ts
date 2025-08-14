@@ -1,11 +1,13 @@
-import { datePickerAnatomy } from '@ark-ui/react/date-picker'
+// import { datePickerAnatomy } from '@ark-ui/react/date-picker'
 import { defineSlotRecipe } from '@pandacss/dev'
-import { resolveAnatomyKeys } from '../../utils/resolve-anatomy-keys';
+// import { resolveAnatomyKeys } from '../../utils/resolve-anatomy-keys';
 
-const slots = resolveAnatomyKeys(datePickerAnatomy);
+// const slots = resolveAnatomyKeys(datePickerAnatomy);
+const slots = ["input", "label", "table", "view", "content", "root", "trigger", "control", "nextTrigger", "prevTrigger", "positioner", "clearTrigger", "tableHeader", "tableBody", "tableRow", "viewTrigger", "monthSelect", "yearSelect", "presetTrigger", "rangeText", "tableCell", "tableCellTrigger", "tableHead", "viewControl"]
 
 export const datePicker = defineSlotRecipe({
   className: 'datePicker',
+  // slots: datePickerAnatomy.keys(),
   slots: slots,
   base: {
     root: {

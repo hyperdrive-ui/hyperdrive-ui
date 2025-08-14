@@ -1,12 +1,13 @@
-import { segmentGroupAnatomy } from '@ark-ui/react/segment-group'
+// import { segmentGroupAnatomy } from '@ark-ui/react/segment-group'
 import { defineSlotRecipe } from '@pandacss/dev'
-import { resolveAnatomyKeys } from '../../utils/resolve-anatomy-keys';
+// import { resolveAnatomyKeys } from '../../utils/resolve-anatomy-keys';
 
-const slots = resolveAnatomyKeys(segmentGroupAnatomy);
-
+// const slots = resolveAnatomyKeys(segmentGroupAnatomy);
+const slots = ["label", "root", "item", "indicator", "itemControl", "itemText"]
 
 export const segmentGroup = defineSlotRecipe({
   className: 'segmentGroup',
+  // slots: segmentGroupAnatomy.keys(),
   slots: slots,
   base: {
     root: {

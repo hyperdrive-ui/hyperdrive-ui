@@ -1,9 +1,17 @@
 // import { dialogAnatomy } from '@ark-ui/react/dialog'
-
-import { actionBarAnatomy } from '../../anatomy'
-
+import { createAnatomy } from '@ark-ui/react/anatomy'
 import { defineSlotRecipe } from '@pandacss/dev'
 
+
+
+// Define anatomy here
+export const actionBarAnatomy = createAnatomy("action-bar").parts(
+    "positioner",
+    "content",
+    "separator",
+    "selectionTrigger",
+    "closeTrigger",
+)
 // const anatomy = dialogAnatomy.extendWith('header', 'body', 'footer')
 
 export const actionBar = defineSlotRecipe({

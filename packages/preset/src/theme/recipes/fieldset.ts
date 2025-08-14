@@ -1,12 +1,13 @@
-import { fieldsetAnatomy } from '@ark-ui/react/fieldset'
+// import { fieldsetAnatomy } from '@ark-ui/react/fieldset'
 import { defineSlotRecipe } from '@pandacss/dev'
-import { resolveAnatomyKeys } from '../../utils/resolve-anatomy-keys';
+// import { resolveAnatomyKeys } from '../../utils/resolve-anatomy-keys';
 
-const slots = resolveAnatomyKeys(fieldsetAnatomy);
-
+// const slots = resolveAnatomyKeys(fieldsetAnatomy);
+const slots = ["legend", "root", "errorText", "helperText"]
 
 export const fieldset = defineSlotRecipe({
   className: 'fieldset',
+  // slots: [...fieldsetAnatomy.keys(), 'control'],
   slots: [...slots, 'control'],
   base: {
     root: {
