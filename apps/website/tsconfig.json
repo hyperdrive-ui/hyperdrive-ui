@@ -28,6 +28,5 @@
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
-  // Temporary disable ./src/components/ui because these are copied over...
-  "exclude": ["node_modules", "./src/components/ui/**"]
+  "exclude": ["node_modules"]
 }
