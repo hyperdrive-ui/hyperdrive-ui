@@ -7,7 +7,6 @@ import { createStyleContext } from './utils/create-style-context'
 
 const { withProvider, withContext } = createStyleContext(checkbox)
 
-export type RootProviderProps = ComponentProps<typeof RootProvider>
 
 // Derive Ark prop types from actual components (version-proof)
 type ArkRootProviderProps = React.ComponentProps<typeof Checkbox.RootProvider>
@@ -18,6 +17,7 @@ type ArkIndicatorProps    = React.ComponentProps<typeof Checkbox.Indicator>
 type ArkLabelProps        = React.ComponentProps<typeof Checkbox.Label>
 
 
+export type RootProviderProps = ComponentProps<typeof RootProvider>
 export const RootProvider = withProvider<
   HTMLLabelElement,
   Assign<HTMLStyledProps<'label'>, Assign<ArkRootProviderProps, CheckboxVariantProps>>

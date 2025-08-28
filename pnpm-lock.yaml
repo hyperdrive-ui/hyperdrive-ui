@@ -6044,8 +6044,8 @@ snapshots:
       '@vue/compiler-ssr': 3.4.19
       '@vue/shared': 3.4.19
       estree-walker: 2.0.2
-      magic-string: 0.30.17
-      postcss: 8.4.49
+      magic-string: 0.30.18
+      postcss: 8.5.6
       source-map-js: 1.2.1
 
   '@vue/compiler-ssr@3.4.19':
@@ -6782,7 +6782,7 @@ snapshots:
 
   caniuse-api@3.0.0:
     dependencies:
-      browserslist: 4.23.3
+      browserslist: 4.25.4
       caniuse-lite: 1.0.30001737
       lodash.memoize: 4.1.2
       lodash.uniq: 4.5.0
@@ -8704,7 +8704,7 @@ snapshots:
 
   postcss-merge-rules@7.0.4(postcss@8.4.49):
     dependencies:
-      browserslist: 4.23.3
+      browserslist: 4.25.4
       caniuse-api: 3.0.0
       cssnano-utils: 5.0.1(postcss@8.4.49)
       postcss: 8.4.49
