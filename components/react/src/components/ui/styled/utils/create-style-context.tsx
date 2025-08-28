@@ -24,7 +24,7 @@ const shouldForwardProp = (prop: string, variantKeys: string[], options: Options
 export const createStyleContext = <R extends Recipe>(recipe: R) => {
   const StyleContext = createContext<Record<Slot<R>, string> | null>(null)
 
-  const withRootProvider = <P extends {} & { className?: string  }>(Component: ElementType) => {
+  const withRootProvider = <P extends {}>(Component: ElementType) => {
     const StyledComponent = (props: P) => {
       const [variantProps, otherProps] = recipe.splitVariantProps(props)
       const slotStyles = recipe(variantProps) as Record<Slot<R>, string>

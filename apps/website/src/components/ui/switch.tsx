@@ -1,7 +1,6 @@
 import { forwardRef } from 'react'
 import * as StyledSwitch from './styled/switch'
 
-
 export interface SwitchProps extends StyledSwitch.RootProps {}
 
 export const Switch = forwardRef<HTMLLabelElement, SwitchProps>((props, ref) => {

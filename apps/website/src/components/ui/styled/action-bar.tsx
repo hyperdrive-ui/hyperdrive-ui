@@ -10,23 +10,39 @@ import { Popover as ArkPopover } from '@ark-ui/react/popover'
 
 const { withRootProvider, withContext } = createStyleContext(actionBar)
 
-
-
+/**
+ * RootProvider
+ */
 export type RootProviderProps = ComponentProps<typeof RootProvider>
 
 export const RootProvider = withRootProvider<
-  Assign<ArkPopover.RootProviderBaseProps, ActionBarVariantProps>
+  Assign<ArkPopover.RootProviderProps, ActionBarVariantProps>
 >(ArkPopover.RootProvider)
 
+/**
+ * Root
+ */
 
 export type RootProps = ComponentProps<typeof Root>
 export const Root = withRootProvider<Assign<ArkPopover.RootProps, ActionBarVariantProps>>(ArkPopover.Root)
 
 
+/** 
+ * Positioner
+ */
+
+export type PositionerProps = ComponentProps<typeof Positioner>
+// export const Positioner = withContext<
+//   HTMLDivElement,
+//   Assign<HTMLStyledProps<'div'>, ArkPopover.PositionerBaseProps>
+// >(ArkPopover.Positioner, 'positioner')
 // export const Positioner = withContext<
 //     HTMLDivElement, 
 //     Assign<HTMLStyledProps<'div'>, ArkPopover.PositionerBaseProps> 
 // >(ArkPopover.Positioner, 'positioner');
+
+
+// export interface ActionBarPositionerProps extends HTMLDivElement<'div'>, 
 
 export const Positioner = withContext<HTMLDivElement, Assign<HTMLStyledProps<'div'>, PolymorphicProps>>(
     ark.div,

@@ -7,6 +7,7 @@ import { createStyleContext } from './utils/create-style-context'
 
 const { withProvider, withContext } = createStyleContext(accordion)
 
+
 export type RootProviderProps = ComponentProps<typeof RootProvider>
 export const RootProvider = withProvider<
   HTMLDivElement,
