@@ -10,7 +10,8 @@
     "lint": "turbo lint",
     "type-check": "turbo type-check",
     "clean": "turbo clean",
-    "sync:components": "rsync -av ./components/react/src/components/ui ./apps/website/src/components"
+    "sync:components": "rsync -av ./components/react/src/components/ui ./apps/website/src/components",
+    "clean:all": "pnpm run clean && pnpm store prune"
   },
   "keywords": [],
   "author": "",
