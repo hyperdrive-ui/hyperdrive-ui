@@ -1,6 +1,7 @@
 import { avatarAnatomy } from '@ark-ui/react/avatar'
 import { defineSlotRecipe } from '@pandacss/dev'
 
+
 export const avatar = defineSlotRecipe({
   className: 'avatar',
   slots: avatarAnatomy.keys(),
