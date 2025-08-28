@@ -104,7 +104,7 @@ importers:
         specifier: 15.4.6
         version: 15.4.6(eslint@9.34.0(jiti@1.21.7))(typescript@5.8.3)
       typescript:
-        specifier: ^5
+        specifier: 5.8.3
         version: 5.8.3
       velite:
         specifier: ^0.2.4

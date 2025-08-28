@@ -1,5 +1,5 @@
 'use client'
-import { RadioGroupValueChangeDetails } from '@ark-ui/react'
+import { type RadioGroupValueChangeDetails } from '@ark-ui/react'
 import { type GrayColor, grayColors } from '@hyperdrive-ui/panda-preset'
 import { Circle, Stack } from 'styled-system/jsx'
 import { token } from 'styled-system/tokens'

@@ -19,7 +19,7 @@ export const Faq = () => {
       question: 'Which JavaScript frameworks are supported?',
       answer: (
         <>
-          Hyperdrive UI, built on top of Ark UI, supports React, Solid, and Vue. We're planning to add
+          Hyperdrive UI, built on top of Ark UI, supports React, Solid, and Vue. We&pos;re planning to add
           Svelte support later this year.
         </>
       ),

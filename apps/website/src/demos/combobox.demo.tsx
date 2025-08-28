@@ -1,21 +1,21 @@
 'use client'
-import { CheckIcon, ChevronsUpDownIcon } from 'lucide-react'
+// import { CheckIcon, ChevronsUpDownIcon } from 'lucide-react'
 import { useState } from 'react'
 import { Combobox, createListCollection } from '~/components/ui/combobox'
-import { IconButton } from '~/components/ui/icon-button'
-import { Input } from '~/components/ui/input'
+// import { IconButton } from '~/components/ui/icon-button'
+// import { Input } from '~/components/ui/input'
 
-const initialCollection = createListCollection({
-  items: [
-    { label: 'React', value: 'react' },
-    { label: 'Solid', value: 'solid' },
-    { label: 'Vue', value: 'vue' },
-    { label: 'Svelte', value: 'svelte', disabled: true },
-  ],
-})
+// const initialCollection = createListCollection({
+//   items: [
+//     { label: 'React', value: 'react' },
+//     { label: 'Solid', value: 'solid' },
+//     { label: 'Vue', value: 'vue' },
+//     { label: 'Svelte', value: 'svelte', disabled: true },
+//   ],
+// })
 
 export const Demo = (props: Combobox.RootProps) => {
-  const [collection, setCollection] = useState(initialCollection)
+  // const [collection, setCollection] = useState(initialCollection)
 
   return <></>
   // const handleInputChange = ({ inputValue }: Combobox.InputValueChangeDetails) => {

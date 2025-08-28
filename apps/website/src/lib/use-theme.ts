@@ -47,8 +47,8 @@ const loadColorPalette = async (color: string): Promise<ColorPalette> => {
     throw new Error(`Unknown color palette: ${color}`)
   }
 
-  const module = await loader()
-  return module.default
+  const mod = await loader() // module
+  return mod.default
 }
 
 export const useTheme = () => {

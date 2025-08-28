@@ -1,5 +1,5 @@
 'use client'
-import { SegmentGroupValueChangeDetails } from '@ark-ui/react'
+import { type SegmentGroupValueChangeDetails } from '@ark-ui/react'
 import { useWindowScroll } from '@uidotdev/usehooks'
 import { useRouter } from 'next/navigation'
 import { useEffect, useRef, useState } from 'react'

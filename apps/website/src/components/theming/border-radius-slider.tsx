@@ -1,4 +1,4 @@
-import { SliderValueChangeDetails } from '@ark-ui/react'
+import { type SliderValueChangeDetails } from '@ark-ui/react'
 import { type Radius, radii } from '@hyperdrive-ui/panda-preset'
 import { Slider } from '~/components/ui/slider'
 

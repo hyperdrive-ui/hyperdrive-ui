@@ -13,7 +13,7 @@ type ColorToken = {
 }
 
 export const getColorTokens = (props: Props): ColorToken[] => {
-  const { type } = props
+  // const { type } = props
   return []
   // return Object.entries<ColorToken[]>(semanticTokens.colors)
   //   .filter(([key]) => key === type)

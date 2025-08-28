@@ -6,7 +6,7 @@ import { Box, Flex, Stack, styled } from 'styled-system/jsx'
 import { Select, createListCollection } from '~/components/ui/select'
 import { Slider } from '~/components/ui/slider'
 import type { Controls } from '.velite'
-import { SelectValueChangeDetails, SliderValueChangeDetails } from '@ark-ui/react'
+import { type SelectValueChangeDetails, type SliderValueChangeDetails } from '@ark-ui/react'
 
 interface Props {
   controls: Controls

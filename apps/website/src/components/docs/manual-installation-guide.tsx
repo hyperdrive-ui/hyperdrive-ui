@@ -100,7 +100,7 @@ export const ManualIntallationGuide = async () => {
       )}
       <Step number="3" title="Integrate Recipe">
         <Text>
-          If you're not using <Code>@hyperdrive-ui/preset</Code>, add the following recipe to your
+          If you&apos;re not using <Code>@hyperdrive-ui/preset</Code>, add the following recipe to your
           <Code>panda.config.ts</Code>:
         </Text>
         <Recipe />

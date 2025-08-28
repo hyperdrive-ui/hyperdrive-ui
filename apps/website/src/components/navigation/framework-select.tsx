@@ -1,5 +1,5 @@
 'use client'
-import { SelectValueChangeDetails } from '@ark-ui/react'
+import { type SelectValueChangeDetails } from '@ark-ui/react'
 import { CheckIcon, ChevronDownIcon } from 'lucide-react'
 import { Icon } from '~/components/ui/icon'
 import { Select, createListCollection } from '~/components/ui/select'
