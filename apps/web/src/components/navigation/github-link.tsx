@@ -1,0 +1,24 @@
+// import { SiGithub } from '@icons-pack/react-simple-icons'
+import { IconButton } from '~/components/ui/icon-button'
+import { PiGithubLogo } from 'react-icons/pi'
+export const GitHubLink = () => {
+  return (
+    <IconButton
+      asChild
+      variant="ghost"
+      size={{ base: 'md', md: 'sm' }}
+      css={{
+        color: 'fg.muted',
+        _hover: { color: 'fg.default' },
+        '& svg': {
+          width: '5',
+          height: '5',
+        },
+      }}
+    >
+      <a href="https://github.com/cschroeter/park-ui" target="_blank" rel="noreferrer">
+        <PiGithubLogo />
+      </a>
+    </IconButton>
+  )
+}

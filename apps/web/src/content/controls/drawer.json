@@ -1,0 +1,6 @@
+{
+  "variant": {
+    "options": ["right", "left"],
+    "defaultValue": "right"
+  }
+}
