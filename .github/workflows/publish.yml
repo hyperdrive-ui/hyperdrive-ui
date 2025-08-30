@@ -45,6 +45,20 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          cache: "pnpm"
+          registry-url: "https://registry.npmjs.org"
+          scope: "@hyperdrive-ui"
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Build packages
+        run: pnpm build --filter=@hyperdrive-ui/panda-preset
+
       # Publish to npm
       - name: Reset and configure for npm
         run: |
