@@ -46,8 +46,9 @@ jobs:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       # Publish to npm
-      - name: Configure npm registry
+      - name: Reset and configure for npm
         run: |
+          rm -f ~/.npmrc
           echo "registry=https://registry.npmjs.org/" > ~/.npmrc
           echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" >> ~/.npmrc
 
