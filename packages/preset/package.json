@@ -1,6 +1,6 @@
 {
   "name": "@hyperdrive-ui/panda-preset",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Panda CSS Preset for Hyperdrive UI",
    "keywords": ["panda-css", "preset", "design-system", "ui"],
   "author": "Gregoire Stevenard",
