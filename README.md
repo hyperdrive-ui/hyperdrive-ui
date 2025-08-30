@@ -289,3 +289,29 @@ This project is inspired by and builds upon [Park UI](https://github.com/cschroe
 ## Known bug:
 
 Noticed that component anatomy imported from @ark-ui/react/checkbox for instance, will fail when passing keys checkboxAnatomy.keys() but if ark-ui export directly the anatomy from zag-js, then it works fine...
+
+<!--
+Login to Github Npm:
+npm login --scope=@hyperdrive-ui --auth-type=legacy --registry=https://npm.pkg.github.com -->
+
+# 1. Make changes to your preset or CLI
+
+# 2. Update version in package.json
+
+# 3. Commit and push to GitHub
+
+git add .
+git commit -m "feat: update preset with new colors"
+git push
+
+# 4. Create and push tag for the package you want to publish
+
+git tag @hyperdrive-ui/panda-preset@0.0.3
+git push origin @hyperdrive-ui/panda-preset@0.0.3
+
+# Or for CLI:
+
+git tag @hyperdrive-ui/cli@1.0.0
+git push origin @hyperdrive-ui/cli@1.0.0
+
+# 5. GitHub automatically builds and publishes! 🚀

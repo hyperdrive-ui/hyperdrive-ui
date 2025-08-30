@@ -1,0 +1,40 @@
+name: Publish Packages
+
+on:
+  push:
+    tags:
+      - "@hyperdrive-ui/panda-preset@*"
+      # - "@hyperdrive-ui/cli@*"
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 9
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          cache: "pnpm"
+          registry-url: "https://npm.pkg.github.com"
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Build packages
+        run: pnpm build --filter=@hyperdrive-ui/panda-preset
+      - name: Publish packages
+        run: pnpm publish --filter=@hyperdrive-ui/panda-preset --no-git-checks
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -45,3 +45,9 @@ dist
 
 # Turbo builds
 .turbo
+
+
+#Temporary
+.release-it.json
+**/.release-it.json
+CHANGELOG.md

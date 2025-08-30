@@ -2,11 +2,12 @@
   "name": "@hyperdrive-ui/panda-preset",
   "version": "0.0.1",
   "description": "Panda CSS Preset for Hyperdrive UI",
-  "keywords": [],
+   "keywords": ["panda-css", "preset", "design-system", "ui"],
   "author": "Gregoire Stevenard",
-  "licence": "MIT",
+  "license": "MIT",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+    "registry": "https://npm.pkg.github.com",
+    "access": "public"
   },
   "repository": {
     "type": "git",
@@ -17,12 +18,22 @@
     "url": "https://github.com/hyperdrive-ui/hyperdrive-ui/issues"
   },
   "scripts": {
-    "build": "tsc",
-    "build:watch": "tsc --watch",
+    "build": "tsup",
+    "build:watch": "tsup --watch",
     "check-types": "tsc --noEmit",
+    "clean": "rimraf dist",
+
+
     "release-it": "release-it",
     "prepack": "clean-package",
     "postpack": "clean-package restore"
+  },
+  "tsup": {
+    "entry": ["src/index.ts", "src/colors/*.ts", "src/utils/index.ts"],
+    "clean": true,
+    "dts": true,
+    "sourcemap": true,
+    "format": ["esm", "cjs"]
   },
   "dependencies": {
     "@ark-ui/react": "^5.18.3",
