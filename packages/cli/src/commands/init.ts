@@ -85,7 +85,8 @@ export const init = new Command()
       
     } catch (error) {
       spinner.fail('Failed to initialize hyperdrive-ui')
-      console.error(chalk.red(error.message))
+      const message = error instanceof Error ? error.message : String(error)
+      console.error(chalk.red(message))
       process.exit(1)
     }
   })

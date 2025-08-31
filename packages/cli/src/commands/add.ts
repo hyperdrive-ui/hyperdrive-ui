@@ -74,10 +74,11 @@ export const add = new Command()
           await addComponent(componentName, config, options.force || false)
           results.push({ name: componentName, success: true })
         } catch (error) {
+          const message = error instanceof Error ? error.message : String(error)
           results.push({ 
             name: componentName, 
             success: false, 
-            error: error.message 
+            error: message 
           })
         }
       }
@@ -115,7 +116,8 @@ export const add = new Command()
       
     } catch (error) {
       spinner.fail('Failed to add components')
-      console.error(chalk.red(error.message))
+      const message = error instanceof Error ? error.message : String(error)
+      console.error(chalk.red(message))
       process.exit(1)
     }
   })

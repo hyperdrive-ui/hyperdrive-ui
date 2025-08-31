@@ -1,7 +1,7 @@
 import fetch, { FetchError } from 'node-fetch'
 import { ComponentData, GitHubFile } from '../types.js'
 
-const REPO_BASE_URL = 'https://raw.githubusercontent.com/gregStevenard/hyperdrive-ui/main'
+const REPO_BASE_URL = 'https://raw.githubusercontent.com/hyperdrive-ui/hyperdrive-ui/main'
 
 export async function fetchFileFromGitHub(filePath: string): Promise<GitHubFile> {
   const url = `${REPO_BASE_URL}/${filePath}`

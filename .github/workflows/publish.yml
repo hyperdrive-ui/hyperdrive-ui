@@ -4,7 +4,7 @@ on:
   push:
     tags:
       - "@hyperdrive-ui/panda-preset@*"
-      # - "@hyperdrive-ui/cli@*"
+      - "@hyperdrive-ui/cli@*"
 
 jobs:
   publish:
@@ -34,17 +34,18 @@ jobs:
         run: pnpm install
 
       - name: Build packages
-        run: pnpm build --filter=@hyperdrive-ui/panda-preset
+        run: pnpm build --filter=@hyperdrive-ui/panda-preset --filter=@hyperdrive-ui/cli
 
       # Publish to Github
       - name: Authenticate with GitHub Packages
         run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}" >> ~/.npmrc
 
       - name: Publish packages
-        run: pnpm publish --filter=@hyperdrive-ui/panda-preset --no-git-checks
+        run: pnpm publish --filter=@hyperdrive-ui/panda-preset --filter=@hyperdrive-ui/cli --no-git-checks
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+      # Publish to NPM
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
@@ -57,7 +58,7 @@ jobs:
         run: pnpm install
 
       - name: Build packages
-        run: pnpm build --filter=@hyperdrive-ui/panda-preset
+        run: pnpm build --filter=@hyperdrive-ui/panda-preset --filter=@hyperdrive-ui/cli
 
       # Publish to npm
       - name: Reset and configure for npm
@@ -67,4 +68,4 @@ jobs:
           echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" >> ~/.npmrc
 
       - name: Publish to npm
-        run: pnpm publish --filter=@hyperdrive-ui/panda-preset --no-git-checks --access public
+        run: pnpm publish --filter=@hyperdrive-ui/panda-preset --filter=@hyperdrive-ui/cli --no-git-checks --access public
